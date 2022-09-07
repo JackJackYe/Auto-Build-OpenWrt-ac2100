@@ -9,7 +9,7 @@
 #============================================================
 
 # 修改默认IP
-#sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.32.1/g' package/base-files/files/bin/config_generate
 
 # 删除默认密码
 #sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
@@ -21,10 +21,10 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
 # 修改主机名称
-#sed -i 's/OpenWrt/HIWIFI-HC5962/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/FZU_WRT/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
-sed -i "s/OpenWrt /Cat~Meow~ build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /OpenWrt Cat~Meow~ build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认wifi名称ssid为tymishop
 #sed -i 's/ssid=OpenWrt/ssid=tymishop/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
