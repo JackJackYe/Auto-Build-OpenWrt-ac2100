@@ -49,7 +49,7 @@ done
 
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_USER="MOLUN"' >>.config ||
+    echo 'CONFIG_KERNEL_BUILD_USER="Cat~Meow~"' >>.config ||
     sed -i 's@\(CONFIG_KERNEL_BUILD_USER=\).*@\1$"Cat~Meow~"@' .config
 
 # Add kernel build domain
