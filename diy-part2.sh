@@ -39,7 +39,7 @@ sed -i "s/OpenWrt /FZU_Wrt Cat~Meow~ build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWr
 #sed -i 's/key=15581822425/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 删除软件包
-rm -rf package/lean/luci-theme-argon
+#rm -rf package/lean/luci-theme-argon
 
 target=$(grep "^CONFIG_TARGET" .config --max-count=1 | awk -F "=" '{print $1}' | awk -F "_" '{print $3}')
 for configFile in $(ls target/linux/$target/config*)
